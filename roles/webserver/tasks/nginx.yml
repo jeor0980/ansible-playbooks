@@ -1,0 +1,4 @@
+# install and configure Nginx
+- name: ensure Nginx is installed
+  apt: name=nginx state=present update_cache=yes
+  become: yes
