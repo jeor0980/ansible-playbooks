@@ -1,3 +1,4 @@
 serverconfig
 *.pub
 hosts
+.vscode/
