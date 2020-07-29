@@ -1,8 +1,16 @@
 deploy_user: deployer
 deploy_group: deployers
 ssh_dir: "/Users/jeor0980/Documents/work/ansible-tutorial/serverconfig/"
-ssh_key_name: "serverconfig"
+ssh_key_name: "flaskdeploy"
 
-db_name: "chapter6"
+db_name: "flaskdeploy"
 db_user: "{{ deploy_user }}"
 db_password: testpassword
+
+app_name: flaskdeploy
+fqdn: "www.ansibledeploymentexample.com"
+web_serve_dir: "/var/www/html"
+ssl_cert_email: "jesusotovar@gmail.com"
+
+wsgi_server_port: 8000
+sub_app_dir: "/home/{{ deploy_user }}/{{ app_name }}/app"
