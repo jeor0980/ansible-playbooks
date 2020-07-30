@@ -48,3 +48,4 @@
     name: nginx
     state: started
   become: yes
+  when: not certs.stat.exists

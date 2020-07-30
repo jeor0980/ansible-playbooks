@@ -2,3 +2,4 @@ flaskdeploy
 *.pub
 hosts
 .vscode/
+deploy_key

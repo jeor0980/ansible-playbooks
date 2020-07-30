@@ -1,6 +1,7 @@
 
 upstream app_server_wsgiapp {
-  server localhost:{{ wsgi_server_port }} fail_timeout=0
+  server localhost:{{ wsgi_server_port }} fail_timeout=0;
+}
 
 server {
   listen 80;
