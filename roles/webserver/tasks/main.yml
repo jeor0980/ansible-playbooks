@@ -2,3 +2,4 @@
 - include: security.yml
 - include: nginx.yml
 - include: git.yml
+- include: dependencies.yml
