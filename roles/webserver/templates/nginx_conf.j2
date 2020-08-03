@@ -1,5 +1,5 @@
 
-upstream app_server_wsgiapp {
+upstream app_server_wsgi_app {
   server localhost:{{ wsgi_server_port }} fail_timeout=0;
 }
 
@@ -44,7 +44,7 @@ server {
             proxy_set_header Host $http_host;
             proxy_redirect off;
             if (!-f $request-filename) {
-                proxy_pass http://appserver_wsgi_app;
+                proxy_pass http://app_server_wsgi_app;
                 break;
             }
     }
